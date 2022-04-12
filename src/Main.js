@@ -5,8 +5,13 @@ class Main extends React.Component {
     render() {
       return (
         <>
-          <div>
-            <HornedBeast title='test beast' description='testing component creation' imageUrl='' />
+          <div class='main'>
+            <p>This is a horned beast!</p>
+            <HornedBeast title='test beast' description='short and spindly' imageUrl='' />
+          </div>
+          <div class='main'>
+            <p>This is a horned beast!</p>
+            <HornedBeast title='beast no. 2' description='tall and shaggy' imageUrl='' />
           </div>
         </>
     );
