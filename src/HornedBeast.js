@@ -1,14 +1,6 @@
 import React from 'react';
 
 class HornedBeast extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: props.title,
-      imageUrl: props.imageUrl,
-      description: props.description
-    };
-  }
   render() {
     return (
       <>
@@ -20,4 +12,4 @@ class HornedBeast extends React.Component {
   }
 }
 
-export default HornedBeast
+export default HornedBeast;
