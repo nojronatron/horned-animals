@@ -20,18 +20,19 @@ JSX
 Javascript
 HTML
 CSS
+Emoji from [freeCodeCamp](https://www.freecodecamp.org/news/all-emojis-emoji-list-for-copy-and-paste/)  
 
 ## Project Time Estimations
 
 Number and name of feature: 1 - Display Images.  
 Est time to complete:  1 hour
-Start time:  1550
-Finish time:  
-Actual time needed to complete:  
+Start time:  1550hrs
+Finish time: 1616hrs  
+Actual time needed to complete: 26 minutes  
 
 Number and name of feature: 2 - Vote for Favorite Beast.  
 Est time to complete: 45 mins  
-Start time:  
+Start time: 1620hrs  
 Finish time:  
 Actual time needed to complete:  
 
