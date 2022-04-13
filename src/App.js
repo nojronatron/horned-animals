@@ -4,7 +4,6 @@ import Main from './Main.js';
 import Footer from './Footer.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-//  import Container from 'react-bootstrap/Container'
 import './index.css';
 
 function App() {
