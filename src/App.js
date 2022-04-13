@@ -5,13 +5,14 @@ import Footer from './Footer.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import data from './data.json';
 
 function App() {
   return (
     <>
         <Header />
         <div className="beast-layout">
-          <Main />
+          <Main beasts={data} />
         </div>
         <Footer />
     </>
