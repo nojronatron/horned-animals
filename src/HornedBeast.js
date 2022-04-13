@@ -9,10 +9,14 @@ class HornedBeast extends React.Component {
     };
   }
 
-  handleClick = () => {
+  handleHeartClick = () => {
     this.setState({
       clicks: this.state.clicks + 1
     });
+  }
+
+  handleImageClick = () => {
+    this.props.showModalHandler(this);
   }
 
   render() {
@@ -20,7 +24,7 @@ class HornedBeast extends React.Component {
     return (
       <>
       <Card border="info" style={{ width: '18rem', margin: '10px'}}>
-        <Card.Body>
+        <Card.Body onClick={this.handleHeartClick} >
         <Card.Title>{this.props.title}</Card.Title>
         <Card.Header>&#x1F493; count: {this.state.clicks}</Card.Header>
         <Card.Img
@@ -28,7 +32,8 @@ class HornedBeast extends React.Component {
           alt={this.props.description}
           title={this.props.title}
           className="clickable-img"
-          onClick={this.handleClick} />
+          onClick={this.props.handleImageClick}
+          />
         <Card.Text>{this.props.description}</Card.Text>
         </Card.Body>
         </Card>

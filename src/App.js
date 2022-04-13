@@ -6,29 +6,49 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import data from './data.json';
+import Modal from 'react-bootstrap/Modal';
 
 class App extends React.Component() {
   constructor(props) {
     super(props);
     this.state = {
-      someThing: false,
+      showModal: false,
+      selectedBeast: {}
     }
   }
 
-  setSomeThing = () => {
+  showModalHandler = (beast) => {
     this.setState({
-      someThing: !this.state.someThing,
+      selectedBeast: beast,
+      showModal: true
     });
-  }
+  };
+
+  hideModalHandler = () => {
+    this.setState({
+      showModal: false
+    });
+  };
 
   render() {
     return (
       <>
           <Header />
           <div className="beast-layout">
-            <Main beasts={data} />
+            <Main 
+            beasts={data}
+            showModalHandler={this.showModalHandler}
+             />
           </div>
           <Footer />
+          <Modal
+            show={this.state.showModal}
+            onHide={this.hideModalHandler}
+            >
+              <Modal.Header closeButton>
+                {this.state.selectedBeast}
+              </Modal.Header>
+            </Modal>
       </>
     );
   }
