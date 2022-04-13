@@ -32,15 +32,15 @@ Actual time needed to complete: 26 minutes
 
 Number and name of feature: 2 - Vote for Favorite Beast.  
 Est time to complete: 45 mins  
-Start time: 1620hrs  
-Finish time:  
-Actual time needed to complete:  
+Start time: 1617hrs  
+Finish time: 1628hrs  
+Actual time needed to complete: 11 minutes  
 
 Number and name of feature: 3 - Bootstrap.  
 Est time to complete: 1 hour  
-Start time:  
-Finish time:  
-Actual time needed to complete:  
+Start time: 1651hrs  
+Finish time: 1914hrs  
+Actual time needed to complete: nearly 2 hours (2 breaks between start and finish)  
 
 Number and name of feature: Stretch Goal - Add Interaction  
 Est time to complete:  
