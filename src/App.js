@@ -3,13 +3,17 @@ import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+        <Header />
+        <div className="beast-layout">
+          <Main />
+        </div>
+        <Footer />
     </>
   );
 }
