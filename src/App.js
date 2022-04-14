@@ -2,68 +2,60 @@ import React from 'react';
 import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import data from './data.json';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import SelectedBeast from './HornedBeast.js';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       showModal: false,
-      beastName: '',
+      title: '',
+      imgurl: '',
+      description: ''
     }
   }
 
-  showModalHandler = (beastTitle) => {
+  showModalHandler = (beastTitle, beastDescription, beastPic) => {
+    console.log(`${beastTitle}, ${beastDescription}, ${beastPic}`);
     this.setState({
-      beastName: beastTitle,
+      title: beastTitle,
+      description: beastDescription,
+      imgurl: beastPic,
       showModal: true
     });
   };
 
   hideModalHandler = () => {
     this.setState({
-      beastName: '',
+      title: '',
+      imgurl: '',
+      description: '',
       showModal: false
     });
   };
 
   render() {
 
-
     return (
       <>
         <Header />
         <div className="beast-layout">
-          <Main 
+          <Main
             beasts={data}
             showModalHandler={this.showModalHandler}
           />
         </div>
         <Footer />
-        <Modal
-          show={this.state.showModal}
-          onHide={this.hideModalHandler}
-          >
-          <Modal.Header>
-            Your Selected Beast
+        <Modal show={this.state.showModal} onHide={this.hideModalHandler}>
+          <Modal.Header closeButton>
+            <Modal.Title>{this.state.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-
-          <SelectedBeast
-            title={this.beastName}
-            imageUrl=''
-            description={this.beastName}
-            key={this.beastName}
-          />
-
+            <img src={this.state.imgurl} alt={this.state.description} width="100%" height="auto" />
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="primary" onClick={this.hideModalHandler}>Close</Button>
+            {this.state.description}
           </Modal.Footer>
         </Modal>
       </>
