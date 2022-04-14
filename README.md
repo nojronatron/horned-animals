@@ -10,6 +10,7 @@ This project is designed to practice developing a React app.
 
 Author: [Jon Rumsey](https://www.github.com/nojronatron)  
 Contributor: [Kyle Honaker](https://github.com/ikyle53)  
+Clutch assists by: Cameron Walden
 
 A portions of code lifted from [stackoverflow.com](https://stackoverflow.com/questions/41978408/changing-style-of-a-button-on-click)  
 
@@ -28,7 +29,14 @@ Emoji from [freeCodeCamp](https://www.freecodecamp.org/news/all-emojis-emoji-lis
 
 Try clicking the title bar above the image cards.  
 
+## Deployment
+
+This project has a live deployment on [Netlify](https://coruscating-peony-348645.netlify.app/)  
+Many thanks to [Netlify](https://www.netlify.com) for making this service available for free!  
+
 ## Project Feature Estimates
+
+### Tuesday 12-Apr-22
 
 Number and name of feature: 1 - Display Images.  
 Est time to complete:  1 hour
@@ -53,3 +61,11 @@ Est time to complete: 1 hour
 Start time: 1916hrs  
 Finish time: 1950hrs  
 Actual time needed to complete: 34 minutes  
+
+### Wednesday 13-Apr-22
+
+Feature: 1 - Display Modal  
+Est time to complete:  50 mins
+Start time:  1540hrs
+Finish time: ____1616____hrs  
+Actual time needed to complete: ____  

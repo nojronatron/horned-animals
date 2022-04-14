@@ -9,26 +9,33 @@ class HornedBeast extends React.Component {
     };
   }
 
-  handleClick = () => {
+  handleHeartClick = () => {
     this.setState({
       clicks: this.state.clicks + 1
     });
   }
 
+  handleImageClick = () => {
+    this.props.showModalHandler(this.props.title);
+  }
+
   render() {
-    console.log(this.props);
     return (
       <>
       <Card border="info" style={{ width: '18rem', margin: '10px'}}>
         <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
-        <Card.Header>&#x1F493; count: {this.state.clicks}</Card.Header>
+        <Card.Header
+          onClick={this.handleHeartClick}>
+          &#x1F493; count: {this.state.clicks}
+          </Card.Header>
         <Card.Img
           src={this.props.imageUrl}
           alt={this.props.description}
           title={this.props.title}
+          onClick={this.handleImageClick}
           className="clickable-img"
-          onClick={this.handleClick} />
+          />
         <Card.Text>{this.props.description}</Card.Text>
         </Card.Body>
         </Card>
@@ -36,7 +43,5 @@ class HornedBeast extends React.Component {
     );
   }
 }
-// width="300"
-// height="auto"
 
 export default HornedBeast;
