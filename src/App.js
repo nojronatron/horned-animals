@@ -3,7 +3,7 @@ import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
 import data from './data.json';
-import { Modal, Form, Button } from 'react-bootstrap';
+import { Modal, Form } from 'react-bootstrap';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,7 +13,6 @@ class App extends React.Component {
       modalTitle: '',
       modalImgurl: '',
       modalDescription: '',
-      sortMethod: '',
       filteredData: data,
     }
   }
@@ -35,18 +34,6 @@ class App extends React.Component {
       showModal: false
     });
   };
-
-  handleSubmit = event => {
-    event.preventDefault();
-    let selected = event.target.select.value;
-    let nameOfList = event.target.listName.value;
-    // console.log(selected);
-    // console.log(nameOfList);
-    this.setState({
-      listName: nameOfList,
-      howToSort: selected,
-    })
-  }
 
   handleSelect = event => {
     let choice = event.target.value;
@@ -80,14 +67,8 @@ class App extends React.Component {
       <>
         <Header />
         <div className="beast-layout">
-          <Form
-            onSubmit={this.handleSubmit}>
-            <Form.Label>Name of List:
-              <Form.Control
-                type="text"
-                name="listName"
-              />
-            </Form.Label>
+          <Form>
+            <Form.Label>Filter the beasts:</Form.Label>
             <Form.Select
               name="select"
               onChange={this.handleSelect}>
@@ -96,7 +77,6 @@ class App extends React.Component {
               <option value="few">Few Horns</option>
               <option value="single">Single Horns</option>
             </Form.Select>
-            <Button type="submit">Show Results</Button>
           </Form>
           <Main
             beasts={this.state.filteredData}

@@ -17,12 +17,9 @@ A portions of code lifted from [stackoverflow.com](https://stackoverflow.com/que
 ## Features
 
 Horned Beasts takes a json file formatted as a collection of objects and displays 'Cards' on the screen.
-Each beast card will accept "fave clicks"!
+Each beast card will accept "fave clicks" count.
 To get a closer look at the beast image, click it for a pop-up close-up.  
-A form that will take user input to:
-
-- Select from a list of options to 'filter' the on-screen display.  
-- Name the custom list they create.  
+Select from a list of options to display only certain horned beasts.  
 
 ## Data Format
 
@@ -37,12 +34,12 @@ A form that will take user input to:
   },
 ```
 
-id: An arbitrary but unique identifier.  
-image_url: A string representing a valid image url, local or remote.  
-title: The title for the beast, i.e. "Horned Duckalope".  
-description: A description suitable for screen readers and `<img alt="">` text.  
-keyword: A keyword representing the beast e.g. "chameleon".  
-horns: Number representing the horn count.  
+- id: An arbitrary but unique identifier.  
+- image_url: A string representing a valid image url, local or remote.  
+- title: The title for the beast, i.e. "Horned Duckalope".  
+- description: A description suitable for screen readers and `<img alt="">` text.  
+- keyword: A keyword representing the beast e.g. "chameleon".  
+- horns: Number representing the horn count.  
 
 ## Easter Egg Feature
 
@@ -63,7 +60,7 @@ Try clicking the title bar above the image cards.
 ## Deployment
 
 This project has a live deployment on [Netlify](https://coruscating-peony-348645.netlify.app/)  
-Many thanks to [Netlify](https://www.netlify.com) for making this service available for free!  
+Many thanks to [Netlify](https://www.netlify.com) and [GitHub](https://www.github.com) for making these code and site hosting and building services for free to learners and students!  
 
 ## Project Feature Estimates
 
