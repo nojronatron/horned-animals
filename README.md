@@ -9,30 +9,58 @@ This project is designed to practice developing a React app.
 ## Collaborators and References
 
 Author: [Jon Rumsey](https://www.github.com/nojronatron)  
-Contributor: [Kyle Honaker](https://github.com/ikyle53)  
-Clutch assists by: Cameron Walden
+Contributor: Fellow student [Kyle Honaker](https://github.com/ikyle53)  
+Clutch assists: Cameron Walden and David Hecker, Code Fellows TAs
 
 A portions of code lifted from [stackoverflow.com](https://stackoverflow.com/questions/41978408/changing-style-of-a-button-on-click)  
 
-## Technologies Used
+## Features
 
-NPM
-Node
-React
-JSX
-Javascript
-HTML
-CSS
-Emoji from [freeCodeCamp](https://www.freecodecamp.org/news/all-emojis-emoji-list-for-copy-and-paste/)  
+Horned Beasts takes a json file formatted as a collection of objects and displays 'Cards' on the screen.
+Each beast card will accept "fave clicks" count.
+To get a closer look at the beast image, click it for a pop-up close-up.  
+Select from a list of options to display only certain horned beasts.  
+
+## Data Format
+
+```javascript
+  {
+    "_id": 0,
+    "image_url": "",
+    "title": "",
+    "description": "",
+    "keyword": "",
+    "horns": 0
+  },
+```
+
+- id: An arbitrary but unique identifier.  
+- image_url: A string representing a valid image url, local or remote.  
+- title: The title for the beast, i.e. "Horned Duckalope".  
+- description: A description suitable for screen readers and `<img alt="">` text.  
+- keyword: A keyword representing the beast e.g. "chameleon".  
+- horns: Number representing the horn count.  
 
 ## Easter Egg Feature
 
 Try clicking the title bar above the image cards.  
 
+## Technologies Used
+
+- NPM
+- Node
+- React
+- JSX
+- Javascript
+- HTML
+- CSS
+- Bootstrap and React-Bootstrap
+- Emoji from [freeCodeCamp](https://www.freecodecamp.org/news/all-emojis-emoji-list-for-copy-and-paste/)  
+
 ## Deployment
 
 This project has a live deployment on [Netlify](https://coruscating-peony-348645.netlify.app/)  
-Many thanks to [Netlify](https://www.netlify.com) for making this service available for free!  
+Many thanks to [Netlify](https://www.netlify.com) and [GitHub](https://www.github.com) for making these code and site hosting and building services for free to learners and students!  
 
 ## Project Feature Estimates
 
@@ -67,5 +95,19 @@ Actual time needed to complete: 34 minutes
 Feature: 1 - Display Modal  
 Est time to complete:  50 mins
 Start time:  1540hrs
-Finish time: ____1616____hrs  
-Actual time needed to complete: ____  
+Finish time: 2020hrs  
+Actual time needed to complete: Not completed Wednesday.  
+
+### Thursday 14-Apr-22
+
+Feature: 1 - Display Modal  
+Est time to complete: 50 mins  
+Start time: 1420hrs  
+Finish time: 1558hrs  
+Actual time needed to complete: 1hr 38mins plus several hours on 13-Apr  
+
+Feature: 1(2 for the day) - Filter by Numbers of Horns  
+Est time to complete: 50 mins  
+Start time: 1640 hrs  
+Finish time: 2200hrs
+Actual time needed to complete: Subtracting breaks and a 201 Final Project Zoom, 3hrs 30mins (estimated)  
